@@ -10,17 +10,41 @@ namespace Tarea
     {
         static void Main(string[] args)
         {
-            int i, impar = 0, par = 0;
-
-            for (i = 0; i < 100; i++)
+            int n;
+            string linea;
+            Console.Write("Ingrese multiplicador: ");
+            linea = Console.ReadLine();
+            n = int.Parse(linea);
+            for (int i = 1; i <= 15; i++)
             {
-                if (i % 2 != 0)
-                {
-                    Console.Write("Los numeros pares son: {0}", i);
-                    impar++;
-
-                }
+                Console.Write(i + " x " + n + " = " + i * n + "\n");
             }
+            Console.ReadKey();
+            float num;
+
+            Console.Write("Ingrese número:");
+            num = float.Parse(Console.ReadLine());
+
+            if (num == 0)
+                Console.Write("El {0} no es negativo ni positivo es neutro", num);
+
+            if (num > 0)
+                Console.Write("El {0} es positivo", num);
+            if (num < 0)
+                Console.Write("El {0} es negativo", num);
+
+            Console.Read();
+        }
+       
         }
     }
-}
+
+
+
+
+
+
+
+
+
+
